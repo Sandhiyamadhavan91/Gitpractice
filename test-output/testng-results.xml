@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" ignored="1" total="10" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="125" started-at="2018-11-20T06:19:23Z" finished-at="2018-11-20T06:19:23Z">
+    <groups>
+      <group name="SPI">
+        <method signature="Groups.Flow()[pri:0, instance:com.testng.Groups@5b275dab]" name="Flow" class="com.testng.Groups"/>
+        <method signature="Groups.sathyam()[pri:0, instance:com.testng.Groups@5b275dab]" name="sathyam" class="com.testng.Groups"/>
+      </group> <!-- SPI -->
+      <group name="pvr">
+        <method signature="Groups.skywalk()[pri:0, instance:com.testng.Groups@5b275dab]" name="skywalk" class="com.testng.Groups"/>
+        <method signature="Groups.wind()[pri:0, instance:com.testng.Groups@5b275dab]" name="wind" class="com.testng.Groups"/>
+      </group> <!-- pvr -->
+      <group name="SPI , PVR">
+        <method signature="Groups.forum()[pri:0, instance:com.testng.Groups@5b275dab]" name="forum" class="com.testng.Groups"/>
+      </group> <!-- SPI , PVR -->
+    </groups>
+    <test name="Test" duration-ms="125" started-at="2018-11-20T06:19:23Z" finished-at="2018-11-20T06:19:23Z">
+      <class name="com.testng.DependsOnMethod">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.testng.DependsOnMethod@523884b2]" name="openBrowser" duration-ms="2" started-at="2018-11-20T06:19:23Z" finished-at="2018-11-20T06:19:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+      </class> <!-- com.testng.DependsOnMethod -->
+      <class name="com.testng.Groups">
+        <test-method status="PASS" signature="Flow()[pri:0, instance:com.testng.Groups@5b275dab]" name="Flow" duration-ms="2" started-at="2018-11-20T06:19:23Z" finished-at="2018-11-20T06:19:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Flow -->
+        <test-method status="PASS" signature="forum()[pri:0, instance:com.testng.Groups@5b275dab]" name="forum" duration-ms="2" started-at="2018-11-20T06:19:23Z" finished-at="2018-11-20T06:19:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forum -->
+        <test-method status="PASS" signature="sathyam()[pri:0, instance:com.testng.Groups@5b275dab]" name="sathyam" duration-ms="2" started-at="2018-11-20T06:19:23Z" finished-at="2018-11-20T06:19:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sathyam -->
+        <test-method status="PASS" signature="skywalk()[pri:0, instance:com.testng.Groups@5b275dab]" name="skywalk" duration-ms="2" started-at="2018-11-20T06:19:23Z" finished-at="2018-11-20T06:19:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- skywalk -->
+        <test-method status="PASS" signature="wind()[pri:0, instance:com.testng.Groups@5b275dab]" name="wind" duration-ms="3" started-at="2018-11-20T06:19:23Z" finished-at="2018-11-20T06:19:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wind -->
+      </class> <!-- com.testng.Groups -->
+      <class name="com.testng.Priority">
+        <test-method status="FAIL" signature="User_credentials(java.lang.String, java.lang.String)[pri:0, instance:com.testng.Priority@4501b7af]" name="User_credentials" duration-ms="0" started-at="2018-11-20T06:19:23Z" finished-at="2018-11-20T06:19:23Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'Username' is required by @Test on method User_credentials but has not been marked @Optional or defined
+in C:\Users\Sony\eclipse-workspace\Maven\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'Username' is required by @Test on method User_credentials but has not been marked @Optional or defined
+in C:\Users\Sony\eclipse-workspace\Maven\testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- User_credentials -->
+        <test-method status="FAIL" signature="test8()[pri:0, instance:com.testng.Priority@4501b7af]" name="test8" duration-ms="21" started-at="2018-11-20T06:19:23Z" finished-at="2018-11-20T06:19:23Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [XYZ] but found [ABC]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [XYZ] but found [ABC]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.testng.Priority.test8(Priority.java:55)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test8 -->
+        <test-method status="FAIL" signature="test9()[pri:0, instance:com.testng.Priority@4501b7af]" name="test9" duration-ms="2" started-at="2018-11-20T06:19:23Z" finished-at="2018-11-20T06:19:23Z">
+          <exception class="java.lang.Exception">
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception
+at com.testng.Priority.test9(Priority.java:63)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test9 -->
+      </class> <!-- com.testng.Priority -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
